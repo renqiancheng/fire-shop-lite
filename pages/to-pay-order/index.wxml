@@ -84,7 +84,10 @@
 
 	<view class="jiesuan-box safeAreaOldPaddingBttom safeAreaNewPaddingBttom">
 		<view class="left-price">
-			<view class="total">合计：¥ {{allGoodsAndYunPrice - youhuijine}} + {{totalScoreToPay}} 积分</view>
+			<!-- 添加判断如果积分为 0 不显示 -->
+			<!-- <view class="total">合计：¥ {{allGoodsAndYunPrice - youhuijine}} + {{totalScoreToPay}} 积分</view> -->
+			<view class="total" wx:if="{{totalScoreToPay <= 0}}">合计：¥ {{allGoodsAndYunPrice - youhuijine}}</view>
+			<view class="total" wx:if="{{totalScoreToPay > 0}}">合计：¥ {{allGoodsAndYunPrice - youhuijine}} + {{totalScoreToPay}} 积分</view>
 		</view>
 		<button class="to-pay-btn" bindtap="goCreateOrder">提交订单</button>
 	</view>
