@@ -16,7 +16,6 @@
 		"pages/order/refundApply",
 		"pages/wuliu/index",
 		"pages/my/index",
-		"pages/recharge/index",
 		"pages/withdraw/index",
 		"pages/score-excharge/index",
 		"pages/score-excharge/growth",
@@ -87,10 +86,6 @@
 		"float-menu": "/components/float-menu/index"
 	},
 	"plugins": {
-		"live-player-plugin": {
-			"version": "1.0.8", 
-			"provider": "wx2b03c6e691cd7370"
-		}
 	},
 	"sitemapLocation": "sitemap.json"
 }

@@ -14,6 +14,7 @@ Page({
 		wxlogin: true, //是否隐藏登录弹窗
 		token: null,
 		version: null,
+		mallinfo:null,
 		noticeList: [],
 		loaded: false//避免首次打开用户中心重复获取数据
 	},
@@ -33,7 +34,8 @@ Page({
 			}
 		})
 		this.setData({
-			version: CONFIG.version
+			version: CONFIG.version,
+			mallinfo:wx.getStorageSync('mallinfo')
 		})
 		//更新订单状态
 	},

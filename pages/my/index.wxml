@@ -166,7 +166,8 @@
 		</view>
 	</view>
 	<view class="padding text-center text-sm text-gray">
-		fire-shop-lite {{version}}@染火科技
+		<!-- fire-shop-lite {{version}}@染火科技 -->
+		{{mallinfo}}
 	</view>
 </view>
 <auth is-hidden="{{wxlogin}}" bind:afterAuth="afterAuth"></auth>

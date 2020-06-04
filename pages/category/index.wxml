@@ -12,7 +12,7 @@
 		</view>
 		<view class="list-container">
 			<view class="type-list">
-				<view class="swiper-container">
+				<!-- <view class="swiper-container">
 					<swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
 						<block wx:for="{{banners}}" wx:key="id">
 							<swiper-item>
@@ -25,7 +25,7 @@
 							<view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
 						</block>
 					</view>
-				</view>
+				</view> -->
 				<view wx:if="{{categoryLevel == 2}}" wx:for="{{rightList}}" wx:key="id" wx:for-item="parentItem" class="type-menu">
 					<view class="padding-sm text-black text-bold">{{parentItem.parentCateName}}</view>
 					<view class="type-level-box" wx:for="{{parentItem.list}}" wx:key="id" wx:for-item="item" >

@@ -20,11 +20,13 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
-	"appid": "wx20828d207755dfc8",
+	"appid": "wxe948066ddad8bcfe",
 	"projectname": "fire-shop-lite",
 	"scripts": {},
 	"simulatorType": "wechat",
